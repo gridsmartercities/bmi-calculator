@@ -16,6 +16,12 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 
 `npm test`
 
-## Cypress tests (Mac terminal)
+## Cypress tests
+
+From a Mac terminal:
 
 `./node_modules/.bin/cypress run`
+
+From a windows PC terminal:
+
+`"node_modules/.bin/cypress" run`
