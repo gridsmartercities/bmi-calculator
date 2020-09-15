@@ -1,3 +1,5 @@
+[<img align="right" alt="Grid Smarter Cities" src="https://s3.eu-west-2.amazonaws.com/open-source-resources/grid_smarter_cities_small.png">](https://www.gridsmartercities.com/)
+
 ## BMI Calculator
 
 React Hooks app to calculate the BMI of a person. It can store the data for 7 days with the help of LocalStorage.
