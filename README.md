@@ -13,3 +13,7 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 ## Usage
 
 `npm start`
+
+## Tests
+
+`npm test`
