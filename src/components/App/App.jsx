@@ -6,6 +6,7 @@ import BmiForm from '../BmiForm/BmiForm';
 import Info from '../Info/Info';
 import Bar from '../Bar/Bar';
 import { getData, storeData } from '../../helpers/localStorage';
+import { callGetBmi } from '../../api/bmi';
 
 const App = () => {
   const initialState = () => getData('data') || [];
@@ -21,13 +22,25 @@ const App = () => {
   }, [state]);
 
   const handleChange = val => {
-    let heightInM = val.height / 100;
-    val.bmi = (val.weight / (heightInM * heightInM)).toFixed(2);
-    val.id = uuidv4();
-    let newVal = [...state, val];
-    let len = newVal.length;
-    if (len > 7) newVal = newVal.slice(1, len);
-    setState(newVal);
+    callGetBmi(val.height, val.weight)
+      .then((response) => {
+        if (!response.ok) {
+          console.log("hre")
+          throw response.json();
+        }
+        return response.json();
+      })
+      .then((data) => {
+        val.bmi = data.bmi;
+        val.id = uuidv4();
+        let newVal = [...state, val];
+        let len = newVal.length;
+        if (len > 7) newVal = newVal.slice(1, len);
+        setState(newVal);
+      })
+      .catch((err) => {
+        console.log("there was an error...")
+      });
   };
 
   const handleDelete = id => {
