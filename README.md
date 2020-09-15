@@ -12,22 +12,22 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 
 3. On a terminal, run:
 
-```npm install```
+   `npm install`
 
 4. To load the web app, run:
 
-```npm start```
+   `npm start`
 
 5. To run unit tests:
 
-```npm test```
+   `npm test`
 
 6. To run Cypress tests:
 
-From a Mac terminal:
+   From a Mac terminal:
 
-```./node_modules/.bin/cypress run```
+   `./node_modules/.bin/cypress run`
 
-From a windows PC terminal:
+   From a windows PC terminal:
 
-```"node_modules/.bin/cypress" run```
+   `"node_modules/.bin/cypress" run`
