@@ -4,24 +4,30 @@ React Hooks app to calculate the BMI of a person. It can store the data for 7 da
 
 Created with _create-react-app_. See the [full create-react-app guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-## Install
+# How to use this project:
 
-`npm install`
+1. You will need to have npm and node installed on your machine.
 
-## Usage
+2. Clone the code on your machine and open it using an IDE (Visual Studio Code)
 
-`npm start`
+3. On a terminal, run:
 
-## Tests
+```npm install```
 
-`npm test`
+4. To load the web app, run:
 
-## Cypress tests
+```npm start```
+
+5. To run unit tests:
+
+```npm test```
+
+6. To run Cypress tests:
 
 From a Mac terminal:
 
-`./node_modules/.bin/cypress run`
+```./node_modules/.bin/cypress run```
 
 From a windows PC terminal:
 
-`"node_modules/.bin/cypress" run`
+```"node_modules/.bin/cypress" run```
